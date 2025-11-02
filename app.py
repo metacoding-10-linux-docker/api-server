@@ -5,7 +5,7 @@ import os
 app = Flask(__name__)
 
 # Redis 연결
-r = redis.Redis(host='host.docker.internal', port=6379, db=0)
+r = redis.Redis(host='redis', port=6379, db=0)
 
 # 메인 페이지
 @app.route("/")
